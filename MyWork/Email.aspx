@@ -4,7 +4,7 @@
 
 
     <p>
-    To<asp:TextBox ID="toTextBox" runat="server" Width="405px"></asp:TextBox>
+    To&nbsp; <asp:TextBox ID="toTextBox" runat="server" Width="405px"></asp:TextBox>
     <br />
     Message:
     <asp:TextBox ID="messageTextBox" runat="server" Height="126px" TextMode="MultiLine" Width="578px"></asp:TextBox>

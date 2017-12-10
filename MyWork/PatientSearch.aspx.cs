@@ -14,13 +14,20 @@ public partial class MyWork_PatientSearch : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        TextBox2.Text = "";
-        AppointmentDBEntities2 dbcon = new AppointmentDBEntities2();
+        NameBox.Text = "";
+        AppointmentDBEntities3 dbcon = new AppointmentDBEntities3();
         PatientTable myPatients = new PatientTable();
 
-        foreach(var x in dbcon.PatientTables.Where(x => x.PatientUserName.Equals(TextBox1.Text)))
+        int myID = Convert.ToInt32(IDBox.Text);
+
+        foreach(var x in dbcon.PatientTables.Where(x => x.PatientID.Equals(myID)))
         {
-            TextBox2.Text = x.PatientUserName;
+            NameBox.Text = x.PatientUserName;
         }
+    }
+
+    protected void IDBox_TextChanged(object sender, EventArgs e)
+    {
+
     }
 }

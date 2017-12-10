@@ -20,8 +20,9 @@ public partial class MyWork_Appointments : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
+        SuccessLabel.Visible = false;
         // Database reference
-        AppointmentDBEntities2 dbcon = new AppointmentDBEntities2();
+        AppointmentDBEntities3 dbcon = new AppointmentDBEntities3();
         AppointmentTable myAppointment = new AppointmentTable();
 
         // Set the time of appointment
@@ -44,12 +45,14 @@ public partial class MyWork_Appointments : System.Web.UI.Page
             }
         }
 
+        ErrorLabel.Visible = false;
 
         // add data to the myAppointment        
         myAppointment.Reason = ReasonBox.Text;
         myAppointment.AppDate = myDate;
         myAppointment.AppTime = myTime;
         myAppointment.DoctorID = docID;
+        myAppointment.City = CityBox.Text;
 
 
         // find department ID for selected doctor
@@ -81,6 +84,8 @@ public partial class MyWork_Appointments : System.Web.UI.Page
         HourBox.Text = "";
         MinuteBox.Text = "";
         ReasonBox.Text = "";
+
+        SuccessLabel.Visible = true;
     }
 
     protected void TextBox3_TextChanged(object sender, EventArgs e)

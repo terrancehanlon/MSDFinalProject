@@ -14,7 +14,7 @@ public partial class Account_Register : Page
         if (result.Succeeded)
         {
             // add to database
-            AppointmentDBEntities2 dbcon = new AppointmentDBEntities2();
+            AppointmentDBEntities3 dbcon = new AppointmentDBEntities3();
             PatientTable myPatients = new PatientTable();
 
             myPatients.PatientUserName = UserName.Text;

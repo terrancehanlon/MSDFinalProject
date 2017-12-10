@@ -15,7 +15,7 @@ public partial class MyWork_View_Appointments : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        AppointmentDBEntities2 dbcon = new AppointmentDBEntities2();
+        AppointmentDBEntities3 dbcon = new AppointmentDBEntities3();
 
         dbcon.AppointmentTables.Load();
 

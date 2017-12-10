@@ -3,12 +3,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
     <p>
         &nbsp;</p>
-    <p>
-        <strong>Please enter the following information to create an appointment:</strong></p>
+    <h3>
+        <strong>Please enter the following information to create an appointment:</strong></h3>
     <p>
         &nbsp;</p>
     <p>
-        <asp:Label ID="Label1" runat="server" Text="Please Enter Hospital City"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Text="Please Enter Your City"></asp:Label>
 &nbsp;
         <asp:TextBox ID="CityBox" runat="server"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;
@@ -47,11 +47,13 @@
     <p>
         <strong>Please state the reason for your visit:</strong></p>
     <p>
-        <asp:TextBox ID="ReasonBox" runat="server" Height="146px" TextMode="MultiLine" Width="687px"></asp:TextBox>
+        <asp:TextBox ID="ReasonBox" runat="server" Height="147px" TextMode="MultiLine" Width="610px" ReadOnly="True"></asp:TextBox>
     </p>
     <p>
         <asp:Button ID="Button1" runat="server" Height="43px" OnClick="Button1_Click" Text="Submit Appointment" Width="238px" />
         <asp:Label ID="ErrorLabel" runat="server" ForeColor="Red" Text="Error: Conflicting Appointment" Visible="False"></asp:Label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="SuccessLabel" runat="server" ForeColor="Blue" Text="Appointment Created Successfully!" Visible="False"></asp:Label>
     </p>
     <p>
         <asp:HyperLink ID="hpylink1" runat="server" NavigateUrl="~/MyWork/View_Appointments.aspx">View Appointments</asp:HyperLink>
