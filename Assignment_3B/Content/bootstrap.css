@@ -184,9 +184,9 @@ input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button;
     z-index: 1;
-    left: 357px;
-    top: 39px;
-    position: absolute;
+    left: 8px;
+    top: 0px;
+    position: relative;
     height: 26px;
 }
 

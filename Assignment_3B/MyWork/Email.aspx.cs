@@ -19,6 +19,7 @@ public partial class MyWork_Email : System.Web.UI.Page
 
         EmailTable email = new EmailTable();
 
+
         email.EmailText = messageTextBox.Text;
         email.TO = toTextBox.Text;
         email.FROM = "username";

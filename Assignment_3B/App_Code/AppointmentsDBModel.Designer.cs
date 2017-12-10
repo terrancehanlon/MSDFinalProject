@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\michael.v.wenzel\Desktop\Assignment_3B\App_Code\AppointmentsDBModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\terrance.hanlon\Desktop\repo\MSDFinalProject\Assignment_3B\App_Code\AppointmentsDBModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
